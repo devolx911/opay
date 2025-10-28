@@ -3,189 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/opay.css">
-    <link rel="stylesheet" href="css/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-    <title>OPay</title>
+    <link rel="stylesheet" href="css/create-opay.css">
+    <title>Create</title>
 </head>
 <body>
-    <div class="payment-container">
-        <div class="header">
-            <div class="profile">
-                <img src="photos/81a0fda1c3b17457b0309a0014ab6ebe.jpg" width="40">
-                <p>Code X</p>
-            </div>
-            <div class="notification">
-                <i class="fa fa-qrcode"></i>
-                <i class="fa fa-bell">
-                    <span>99</span>
-                </i>
-                
-            </div>
-        </div>
-        <div class="dash-board">
-            <div class="dash-board-left-section">
-                <span>Available Balance <i class="fa fa-eye"></i></span>
-                <h2><span>$</span>20,000,000</h2>
-            </div>
-            <div class="dash-board-right-section">
-                <span>Transation History</span>
-                <a href="#">+ Add Money</a>
-            </div>
+    <div class="create-container">
+        <h2><Span>O</Span>pay</h2>
 
+        <div class="create-input">
+            <!-- <form action=""> -->
+                <h2>Get an Opay Account</h2>
+                <div class="field-wrapper">
+                    <label for="first-name">First Name</label>
+                    <input id="first-name" type="text" name="first-name" placeholder="Enter your First Name" required>
+                </div>
+                <div class="field-wrapper">
+                    <label for="last-name">Last Name</label>
+                    <input id="last-name" type="text" name="last-name" placeholder="Enter your last Name" required>
+                </div>
+                <div class="field-wrapper">
+                    <label for="number-email">Mobile No/Email</label>
+                    <input id="number-email" type="text" name="number-email" placeholder="Enter your Mobile No/Email" required>
+                </div>
+                <div class="field-wrapper">
+                    <label for="password">Create Password</label>
+                    <input id="password" type="password" name="password" placeholder="Enter 6-digit password" required>
+                </div>
+
+                <button id="createBtn">Sign Up</button>
+
+                <p id="createStatus"></p>
+                <p><input type="checkbox" required> I have read, understood and agreed to the<a class="terms-condition" href="#"> Terms & Conditions <span>and</span> Privacy Policy.</a></p>
+            <!-- </form> -->
         </div>
-        <div class="history">
-            <ul>
-                <li>
-                    <div class="transfer-status">
-                        <i class="fa fa-arrow-up"></i>
-                    </div>
-                    <div class="tranfer-name-date">
-                        <p>Trasfer to BIG LOADED</p>
-                        <span>Jul 22nd 15:08:35</span>
-                    </div>
-                    <div class="amount">
-                        <h2>$50,000.00</h2>
-                    </div>
-                </li>
-                <li>
-                    <div class="transfer-status">
-                        <i class="fa fa-arrow-up"></i>
-                    </div>
-                    <div class="tranfer-name-date">
-                        <p>Trasfer to BIG JOHN</p>
-                        <span>Jul 22nd 15:08:35</span>
-                    </div>
-                    <div class="amount">
-                        <h2>$70,000.00</h2>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="services-type">
-            <ul>
-                <li><i class="fa fa-user"></i></li>
-                <li><i class="fa fa-home"></i></li>
-                <li id="transferBtn"><i class="fa fa-exchange"></i></li>
-            </ul>
-        </div>
-        <div class="services">
-            <ul>
-                <li>
-                    <div class="icon">
-                        <i class="fa fa-phone"></i>
-                    </div>
-                    <div class="serivces-name">
-                        <p>Airtime</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="icon">
-                        <i class="fa fa-database"></i>
-                    </div>
-                    <div class="serivces-name">
-                        <p>Data</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="icon">
-                        <i class="fa fa-trophy"></i>
-                    </div>
-                    <div class="serivces-name">
-                        <p>Betting</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="icon">
-                        <i class="fa fa-money"></i>
-                    </div>
-                    <div class="serivces-name">
-                        <p>Loan</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="icon">
-                        <i class="fa fa-tv"></i>
-                    </div>
-                    <div class="serivces-name">
-                        <p>TV Cable</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="icon">
-                        <i class="fa fa-ellipsis-h"></i>
-                    </div>
-                    <div class="serivces-name">
-                        <p>More</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="icon">
-                        <i class="fa fa-shield"></i>
-                    </div>
-                    <div class="serivces-name">
-                        <p>Save</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="icon">
-                        <i class="fa fa-user-plus"></i>
-                    </div>
-                    <div class="serivces-name">
-                        <p>Invite</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-nav">
-            <ul>
-                <li>
-                    <div class="icon">
-                        <i class="fa fa-home"></i>
-                    </div>
-                    <div class="serivces-name">
-                        <p>Home</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="icon">
-                        <i class="fa fa-gift"></i>
-                    </div>
-                    <div class="serivces-name">
-                        <p>Rewards</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="icon">
-                        <i class="fa fa-money"></i>
-                    </div>
-                    <div class="serivces-name">
-                        <p>Finance</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="icon">
-                        <i class="fa fa-id-card"></i>
-                    </div>
-                    <div class="serivces-name">
-                        <p>Card</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="icon">
-                        <i class="fa fa-user"></i>
-                    </div>
-                    <div class="serivces-name">
-                        <p>Me</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        
+        <footer>
+            <p>Already have an Opay Account? <a href="opay-login.html">Log in</a></p>
+            <p class="licensed">Licensed by the <span>CBN</span> and insured by the <span>NDIC</span></p>
+        </footer>
     </div>
+
+
+
+
+    <script src="js/create-opay.js"></script>
     
-
-
-
-    <script src="js/opay.js"></script>
 </body>
 </html>
