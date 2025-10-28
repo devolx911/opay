@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+html{
+    font-size: 62.5%;
+}
+.transfer-container{
+    padding: 2rem;
+    background-color: #fff;
+    height: 100vh;
+    max-width: 700px;
+    margin: 0 auto;
+}
+header{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.7rem;
+}
+.left-header>p{
+    font-size: 1.7rem;
+}
+.right-header>a{
+    color: #20d146;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.advert-container{
+    width: 100%;
+    height: 80px;
+    margin-bottom: 1rem;
+
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+}
+.free-tranfer>p{
+    font-size: 1.7rem;
+    background-color: hsl(271, 76%, 80%);
+    color: hsl(271, 76%, 40%);
+    padding: 1rem;
+    border-radius: 5px;
+}
+.transfer{
+    width: 100%;
+    position: relative;
+    margin: 1rem 0;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 20px;
+}
+.transfer>h2{
+    font-size: 2.4rem;
+}
+.field-wrapper>input{
+    width: 100%;
+    padding: 1.5rem 1rem;
+    outline: none;
+    border: none;
+    transition: border 0.3s ease;
+    margin: 0.7rem 0;
+    font-size: 1.7rem;
+}
+.transfer>button{
+    width: 90%;
+    background-color: #20d146;
+    color: #fff;
+    border: none;
+    font-size: 1.7rem;
+    padding: 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    display: block;
+    margin: 1rem auto;
+}
+.tranfer-success-rate>p{
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 1rem 0;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.recent-transfer-container{
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 2rem;
+}
+.recent-transfer-container>.recent-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+
+
+    .recent>p,.search{
+        color: #20d146;
+    }
+    .favourites>p{
+        color: hsl(0, 0%, 29%);
+    }
+}
+.recent-list{
+    margin-top: 1rem;
+}
+.recent-list>ul>li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+.recent-list>ul>li>.acc-info{
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+
+    .acc-name{
+        font-weight: 700;
+    }
+    .acc-num{
+        color:  hsl(0, 0%, 29%);
+    }
+}
+.recent-list>ul>li>.bank-logo>img{
+    width: 20px;
+    border-radius: 50%;
+}

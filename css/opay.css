@@ -1,0 +1,229 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+html{
+    font-size: 62.5%;
+}
+i{
+    cursor: pointer;
+}
+.payment-container{
+    padding: 2rem;
+    background-color: hsl(0, 7%, 98%);
+    height: 100vh;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.payment-container .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .profile{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        align-items: center;
+        
+        img{
+            border-radius: 50%;
+        }
+        p{
+            font-size: 1.7rem;
+            font-weight: 700;
+        }
+    }
+}
+.notification{
+    i{
+        font-size: 1.7rem;
+    }
+    .fa-bell{
+        position: relative;
+    }
+    span{
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        font-size: 1.3rem;
+        background-color: #ff0000;
+        color: #fff;
+        border-radius: 50%;
+        padding: 0.1rem;
+    }
+}
+/* ------dash-board--------- */
+.dash-board{
+    background-color: #20d146;
+    padding: 1.5rem 2rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    height: 12rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .dash-board-left-section{
+        span{
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #fff;
+        }
+        h2{
+            font-size: 3.4rem;
+            color: #fff;
+            margin-top: 1rem;
+
+            span{
+                font-size: 3.4rem;
+            }
+        }
+    }
+
+    .dash-board-right-section{
+        span{
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #fff;
+        }
+        a{
+            display: block;
+            margin-top: 1.5rem;
+            color: #20d146;
+            text-decoration: none;
+            background-color: #fff;
+            width: 13rem;
+            padding: 0.7rem 1rem;
+            border-radius: 15px;
+            font-size: 1.7rem;
+            text-align: center;
+            font-weight: 700;
+        }
+
+    }
+
+
+}
+/* ---------history---------------- */
+.history{
+    background-color: #fff;
+    margin: 1rem 0;
+    padding: 2rem;
+    border-radius: 15px;
+
+    ul>li{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+
+        .transfer-status>i{
+            font-size: 1.7rem;
+            color: #20d146;
+            background-color: #d5f7dc;
+            border-radius: 50%;
+            padding: 1.5rem;
+        }
+
+        .tranfer-name-date{
+            p{
+                font-size: 1.7rem;
+                margin-bottom: 0.7rem;
+            }
+            span{
+                font-size: 1.5rem;
+                color: #999696;
+            }
+        }
+
+        .amount{
+            h2{
+                font-size: 2rem;
+            }
+        }
+
+    }
+}
+/* -----------services-type----------- */
+.services-type{
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+    }
+    li>i{
+        font-size: 2.4rem;
+        border-radius: 50%;
+        background-color: #d5f7dc;
+        padding: 2rem;
+        color: #20d146;
+    }
+
+}
+.services{
+    background-color: #fff;
+    margin-top: 1rem;
+    padding: 2rem;
+    border-radius: 15px;
+    width: 100%;
+    ul{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        list-style: none;
+
+        li{
+            padding: 1rem;
+        }
+        
+
+        li>.icon>i{
+            font-size: 2rem;
+            color: #20d146;
+            padding: 1rem;
+            border-radius: 50%;
+            background-color: #e7e7e7;
+            
+        }
+        li>.serivces-name>p{
+            font-size: 1.4rem;
+        }
+    }
+}
+.footer-nav{
+    background-color: #fff;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 15px;
+    width: 100%;
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        
+
+        li>.icon>i{
+            font-size: 2rem;
+            color: #20d146;
+            padding: 1rem;
+            border-radius: 50%;
+            background-color: #e7e7e7;
+            
+        }
+        li>.serivces-name>p{
+            font-size: 1.4rem;
+        }
+    }
+}
